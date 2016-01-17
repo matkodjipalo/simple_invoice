@@ -55,7 +55,7 @@ DROP TABLE IF EXISTS `invoice`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `invoice` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `unique_sequential_number` int(11) NOT NULL,
+  `unique_sequential_number` int(11) unsigned NOT NULL,
   `date_of_creation` datetime NOT NULL,
   `due_date` datetime NOT NULL,
   `total_brutto_amount` decimal(10,0) NOT NULL,
@@ -138,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-17 13:29:56
+-- Dump completed on 2016-01-17 15:43:53
